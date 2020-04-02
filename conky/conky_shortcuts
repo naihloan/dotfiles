@@ -1,0 +1,39 @@
+conky.config = {
+    alignment = 'bottom_left',
+    background = true,
+    color2 = 'ffffff',
+    cpu_avg_samples = 2,
+	default_color = 'white',
+	double_buffer = true,
+    font = 'Liberation Sans:size=9',
+    draw_shades = false,
+    gap_x = 30,
+    gap_y = 60,
+    minimum_height = 5,
+	minimum_width = 1,
+	maximum_width = 200,
+    no_buffers = true,
+	own_window = true,
+    own_window_type = 'override',
+    own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+}
+
+conky.text = [[
+
+${color 458588}suspend$alignr ${color d79921}mod+Shift+s
+${color 458588}exit$alignr ${color d79921}mod+Shift+e
+${color 458588}kill focused$alignr ${color d79921}mod+Shift+q
+${color 458588}usb mount$alignr ${color d79921}mod+Ctrl+m
+${color 458588}usb unmount$alignr ${color d79921}mod+Ctrl+u
+
+${color 458588}dmenu$alignr ${color d79921}mod+d
+${color 458588}terminal$alignr ${color d79921}mod+Enter
+${color 458588}web browser$alignr ${color d79921}mod+Ctrl+w
+${color 458588}editor$alignr ${color d79921}mod+Ctrl+e
+${color 458588}file manager$alignr ${color d79921}mod+Ctrl+f
+
+${color 98971a}default mod=<Super>
+
+]]
