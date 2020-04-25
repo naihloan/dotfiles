@@ -42,6 +42,9 @@
 #  gaps inner 0
 #  gaps outer 0
 
+# Automatic back-and-forth when switching to the current workspace
+workspace_auto_back_and_forth yes
+
 # Window-Related Bindings
   bindsym $mod+Shift+q kill
 
@@ -97,20 +100,17 @@
 
   bindsym $mod+r mode "resize"
   mode "resize" {
-    # bindsym j resize shrink width 10 px or 10 ppt
-    # bindsym k resize grow height 10 px or 10 ppt
-    # bindsym l resize shrink height 10 px or 10 ppt
     bindsym semicolon resize grow width 10 px or 10 ppt
     bindsym Escape mode "default"
     bindsym Return mode "default"
-
-    # same bindings, but for the arrow keys
     bindsym Left resize shrink width 10 px or 10 ppt
     bindsym Down resize grow height 10 px or 10 ppt
     bindsym Up resize shrink height 10 px or 10 ppt
     bindsym Right resize grow width 10 px or 10 ppt
-
   }
+    # bindsym j resize shrink width 10 px or 10 ppt
+    # bindsym k resize grow height 10 px or 10 ppt
+    # bindsym l resize shrink height 10 px or 10 ppt
 
 # Restart-Related Bindings
 # reload the configuration file
@@ -147,6 +147,7 @@
 bindsym $mod+c exec google-chrome
 bindsym $mod+shift+F exec firefox-esr
 bindsym $mod+Ctrl+s exec slack
+bindsym $mod+Ctrl+t exec termius-app
 bindsym $mod+F3 exec pcmanfm
 bindsym $mod+Shift+F3 exec gksu pcmanfm
 bindsym $mod+F5 exec lxterminal -e 'mocp'
