@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!-- /usr/share/pandoc/data/templates/ default.html -->
 <html$if(lang)$ lang="$lang$"$endif$$if(dir)$ dir="$dir$"$endif$>
 <head>
   <meta charset="utf-8">
@@ -7,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" media="screen">
   <link rel="shortcut icon" href="../icons/running-man.png">
   <meta name=”keywords” content="sociology ultra running city affect art ethnography anthropology"/>
-  <title>ramoneando.com [ULTRA | PhD at Exeter]</title>
+  <title>ramoneando.com </title>
 $for(author-meta)$
   <meta name="author" content="$author-meta$">
 $endfor$
@@ -38,7 +39,8 @@ $endfor$
 </head>
 <body>
     <nav class="navbar navbar-light bg-light rounded">
-        <h1><a class="navbar-brand" href="#">&#128367; &nbsp; &#127939; &#127939; ramoneando.com &#127939;</a></h1>
+	<div class="container">
+        <h1><a class="navbar-brand" href="index.html"> &#9998; ramoneando.com </a></h1>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -58,8 +60,9 @@ $endfor$
       </div>
     </nav>
     </div>
+    </div>
 <div class="container">
-<h4>® <a href="https://twitter.com/venhamon">Benjamín Juárez</a></h4><hr>
+<h4>® <a href="https://twitter.com/venhamon">Benjamín Juárez</a></h4></br>
 $for(include-before)$
 $include-before$
 $endfor$
@@ -92,6 +95,7 @@ $endfor$
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="css/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="css/bootstrap.js"></script>
-<hr>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
