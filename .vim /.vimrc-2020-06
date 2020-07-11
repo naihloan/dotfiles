@@ -1,8 +1,6 @@
 " basics 
 syntax on
 filetype plugin indent on
-set encoding=utf-8  " The encoding displayed.
-set fileencoding=utf-8  " The encoding written to file.
 set ts=4 sw=4 et " set tabstop=4 shiftwidth=4 expandtab
 set spell spelllang=en_us,es
 set clipboard=unnamedplus showcmd encoding=utf-8 fileencoding=utf-8 nocompatible
@@ -93,17 +91,11 @@ if has("autocmd")
     \| exe "normal! g'\"" | endif
 endif
 
-" " Vim plug
-" call plug#begin('~/.vim/plugged')
-" Plug 'junegunn/fzf'
-" Plug 'junegunn/goyo.vim'
-" call plug#end()
+" Vim plug
+call plug#begin('~/.vim/plugged')
+Plug 'junegunn/fzf'
+Plug 'junegunn/goyo.vim'
+call plug#end()
 
 " Plugin 'mattly/iterm-colors-pencil'
-" au FileType markdown Goyo
-
-" https://stackoverflow.com/questions/5312235/how-do-i-correct-vim-spelling-mistakes-quicker
-" https://stackoverflow.com/a/16481737/6253165
-" imap <c-l> <c-g>u<Esc>[s1z=`]a<c-g>u
-" imap <c-f> <c-g>u<Esc>[s1z=`]a<c-g>u
-" nmap <c-f> [s1z=<c-o>
+au FileType markdown Goyo
